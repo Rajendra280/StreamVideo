@@ -35,13 +35,13 @@ const VideoPage = () => {
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Main Video Section */}
           <div className="flex-1 w-full">
-            <div className="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-md">
+            <div id="video-preview" className="w-full aspect-video bg-black rounded-xl overflow-hidden shadow-md">
               <a
                 target="_blank"
                 href={post?.link1 || `https://www.profitableratecpm.com/d3wik33at?key=eb07cf95bb0f2a22aaa1a0c687e796bb`}
                 className="block w-full h-full relative"
               >
-                <figure className="relative w-full h-full">
+                <figure id="show-video" className="relative w-full h-full">
                   <img
                     src={post?.image}
                     alt={post?.title || "Video"}
